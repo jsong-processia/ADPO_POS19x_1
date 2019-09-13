@@ -48,6 +48,7 @@ public class HelloApplication {
         System.out.println("Sending an email message from the main of HelloApplication.");
         jmsTemplate.convertAndSend("mailbox", new Email("jsong8y@yahoo.com", "Hello E-SONG  !!!"));
         //jmsTemplate.receiveAndConvert("OK:Got It!");
+        System.out.println("Add -- It Pushed ....");
     }
 
 }
